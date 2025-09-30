@@ -1,0 +1,249 @@
+.custom-navbar6 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0.8rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+  height: 100px;
+}
+
+/* Brand Logo Styles */
+.brand-logo6 {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo6:hover {
+  transform: translateY(-2px);
+}
+
+.logo-container6 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon6 {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo-text6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-main6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-sub6 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Toggle */
+.navbar-toggle6 {
+  border: none;
+  padding: 4px 8px;
+}
+
+.navbar-toggle6:focus {
+  box-shadow: none;
+}
+
+.navbar-toggle6 .navbar-toggler-icon6 {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Main Navigation */
+.main-nav6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 2rem;
+}
+
+.nav-item6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.8rem 1.2rem !important;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  margin: 0 4px;
+}
+
+.nav-item6:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+.nav-icon6 {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-item6:hover .nav-icon6 {
+  transform: scale(1.1);
+}
+
+.nav-text6 {
+  font-size: 0.95rem;
+}
+
+/* Auth Section */
+.auth-section6 {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.auth-buttons6 {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-login6, .btn-signup6, .btn-logout6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+}
+
+.btn-login6 {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-login6:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.btn-signup6 {
+  background: white;
+  color: #667eea;
+}
+
+.btn-signup6:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  color: #667eea;
+}
+
+.btn-logout6 {
+  background: rgba(220, 53, 69, 0.8);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-logout6:hover {
+  background: #dc3545;
+  transform: translateY(-2px);
+}
+
+.btn-icon6 {
+  font-size: 1rem;
+}
+
+/* Social Section */
+.social-section6 {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-icons6 {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link6:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px) scale(1.1);
+}
+
+.social-icon6 {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .main-nav6 {
+    margin: 1rem 0;
+    gap: 0;
+  }
+  
+  .nav-item6 {
+    margin: 4px 0;
+    justify-content: flex-start;
+  }
+  
+  .auth-section6 {
+    margin: 1rem 0;
+    justify-content: flex-start;
+  }
+  
+  .social-section6 {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+  }
+  
+  .social-icons6 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-main6 {
+    font-size: 1.5rem;
+  }
+  
+  .logo-icon6 {
+    font-size: 2rem;
+  }
+  
+  .auth-buttons6 {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-login6, .btn-signup6, .btn-logout6 {
+    justify-content: center;
+  }
+}

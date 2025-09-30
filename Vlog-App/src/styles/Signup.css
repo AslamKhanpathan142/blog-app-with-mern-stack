@@ -1,0 +1,491 @@
+.signup-container9 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Shapes */
+.signup-background9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.shape9 {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.shape9-1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+}
+
+.shape9-2 {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  right: 100px;
+}
+
+.shape9-3 {
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  right: -50px;
+}
+
+/* Signup Card */
+.signup-card9 {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Header */
+.signup-header9 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.signup-icon9 {
+  margin-bottom: 1rem;
+}
+
+.signup-icon9 .icon9 {
+  font-size: 4rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+}
+
+.signup-header9 h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.signup-header9 p {
+  color: #718096;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Form */
+.signup-form9 {
+  margin-bottom: 2rem;
+}
+
+.input-group9 {
+  margin-bottom: 1.5rem;
+}
+
+.input-label9 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.label-icon9 {
+  font-size: 1.1rem;
+}
+
+.input-container9 {
+  position: relative;
+}
+
+.password-container9 {
+  display: flex;
+  align-items: center;
+}
+
+.form-input9 {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.password-container9 .form-inpu9 {
+  padding-right: 3rem;
+}
+
+.form-input9:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.form-input9.error9 {
+  border-color: #e53e3e;
+  background: #fed7d7;
+}
+
+.input-border9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.form-input9:focus ~ .input-border9 {
+  width: 100%;
+}
+
+.password-toggle9 {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  transition: transform 0.3s ease;
+}
+
+.password-toggle9:hover {
+  transform: scale(1.1);
+}
+
+.password-toggle9:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message9 {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.password-hint9 {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 0.3rem;
+}
+
+/* Terms Agreement */
+.terms-agreement9 {
+  margin: 1.5rem 0;
+}
+
+.checkbox-label9 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.checkbox-label9 input {
+  display: none;
+}
+
+.checkmark9 {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cbd5e0;
+  border-radius: 4px;
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.checkbox-label9 input:checked + .checkmark9 {
+  background: #667eea;
+  border-color: #667eea;
+}
+
+.checkbox-label9 input:checked + .checkmark9::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-label9 a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.checkbox-label9 a:hover {
+  text-decoration: underline;
+}
+
+/* Signup Button */
+.signup-btn9 {
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.signup-btn9:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.signup-btn9:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.signup-btn9.loading9 {
+  background: linear-gradient(135deg, #a0aec0 0%, #718096 100%);
+}
+
+.btn-spinner9 {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn-icon9 {
+  font-size: 1.2rem;
+}
+
+/* Submit Error */
+.submit-error9 {
+  background: #fed7d7;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.error-icon9 {
+  font-size: 1.2rem;
+}
+
+/* Divider */
+.divider9 {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.divider9::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.divider9 span {
+  background: white;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Social Signup */
+.social-signup9 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-btn9 {
+  padding: 0.8rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.social-btn9:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.google-btn9:hover {
+  border-color: #db4437;
+}
+
+.github-btn9:hover {
+  border-color: #333;
+}
+
+/* Login Section */
+.login-section9 {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.login-section9 p {
+  color: #718096;
+  margin: 0;
+}
+
+.login-link9 {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Benefits Section */
+.benefits-section9 {
+  background: #f0f9ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e0f2fe;
+}
+
+.benefits-section9 h4 {
+  color: #0369a1;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.benefits-list9 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.benefit9 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #0c4a6e;
+  font-size: 0.9rem;
+}
+
+.benefit-icon9 {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-card9 {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .signup-header9 h1 {
+    font-size: 1.8rem;
+  }
+  
+  .social-signup9 {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefits-list9 {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card9 {
+    padding: 1.5rem;
+  }
+  
+  .signup-header9 h1 {
+    font-size: 1.6rem;
+  }
+  
+  .signup-icon9 .icon9 {
+    font-size: 3rem;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .form-input9 {
+    padding: 0.8rem 1rem;
+  }
+  
+  .signup-btn9 {
+    padding: 1rem;
+  }
+  
+  .benefits-section9 {
+    padding: 1rem;
+  }
+}
