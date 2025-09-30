@@ -13,7 +13,7 @@ const app = express();
 
 app.use(cors(
 {
-  origin: "*", // or your Vercel domain
+  origin: "https://blog-app-with-mern-stack-ten.vercel.app", // or your Vercel domain
   methods: "GET,POST,PUT,DELETE",
   credentials: true
 }
