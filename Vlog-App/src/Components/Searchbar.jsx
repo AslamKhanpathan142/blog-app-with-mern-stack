@@ -15,7 +15,7 @@ function Searchbar() {
     setIsLoading(true);
     setHasSearched(true);
 
-    fetch(`http://localhost:8000/api/search/${search}`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/search/${search}`)
       .then((res) => res.json())
       .then((data) => {
         setShowVlog(data);

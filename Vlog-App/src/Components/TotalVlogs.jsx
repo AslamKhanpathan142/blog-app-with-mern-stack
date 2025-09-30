@@ -11,7 +11,7 @@ const TotalVlogs = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:8000/api/users/`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/users/`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched data:", data);
@@ -31,7 +31,7 @@ const TotalVlogs = () => {
       vlog: vlog.vlog,
     };
     
-    fetch("http://localhost:8000/api/FavoriteVlogs", {
+    fetch(`${process.env.REACT_APP_API_URL}/api/FavoriteVlogs`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(favVlog),
