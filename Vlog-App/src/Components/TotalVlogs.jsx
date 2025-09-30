@@ -11,7 +11,7 @@ const TotalVlogs = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/api/users/`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/users`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched data:", data);
