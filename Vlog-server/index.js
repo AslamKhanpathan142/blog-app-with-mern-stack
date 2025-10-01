@@ -11,13 +11,12 @@ const jwt = require('jsonwebtoken');
 const app = express();
 
 
-app.use(cors(
-{
-  origin: "https://blog-app-with-mern-stack-ten.vercel.app", // or your Vercel domain
-  methods: "GET,POST,PUT,DELETE",
+app.use(cors({
+  origin: "https://blog-app-with-mern-stack-ten.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
-}
-))
+}));
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 

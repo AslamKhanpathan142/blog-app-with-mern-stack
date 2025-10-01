@@ -10,6 +10,7 @@ const TotalVlogs = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
+    console.log("API URL:", process.env.REACT_APP_API_URL);
     setLoading(true);
     fetch(`${process.env.REACT_APP_API_URL}/api/users`)
       .then((res) => res.json())
