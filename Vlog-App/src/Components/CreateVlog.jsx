@@ -15,7 +15,7 @@ function CreateVlog() {
     const newVlogs = { title, vlog };
     const token = localStorage.getItem("token");
 
-    fetch(`${process.env.REACT_APP_API_URL}/api/createVlogs`, {
+    fetch(`${import.meta.env.VITE_API_URL}/api/createVlogs`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

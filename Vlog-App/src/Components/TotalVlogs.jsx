@@ -10,9 +10,9 @@ const TotalVlogs = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    console.log("API URL:", process.env.REACT_APP_API_URL);
+
     setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/api/users`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/users`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched data:", data);
@@ -32,7 +32,7 @@ const TotalVlogs = () => {
       vlog: vlog.vlog,
     };
     
-    fetch(`${process.env.REACT_APP_API_URL}/api/FavoriteVlogs`, {
+    fetch(`${import.meta.env.VITE_API_URL}/api/FavoriteVlogs`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(favVlog),

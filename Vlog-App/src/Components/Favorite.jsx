@@ -13,7 +13,7 @@ function Favorite() {
 
   const fetchFavorites = () => {
     setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/api/FavoriteVlogs`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/FavoriteVlogs`)
       .then((res) => res.json())
       .then((data) => {
         setFavorites(data);
@@ -31,7 +31,7 @@ function Favorite() {
     }
 
     setDeletingId(id);
-    fetch(`${process.env.REACT_APP_API_URL}/api/deleteVlog/${id}`, {
+    fetch(`${import.meta.env.VITE_API_URL}/api/deleteVlog/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

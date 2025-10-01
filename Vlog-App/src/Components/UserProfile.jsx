@@ -13,13 +13,13 @@ function UserProfile() {
     const token = localStorage.getItem("token");
 
     Promise.all([
-      fetch(`${process.env.REACT_APP_API_URL}/api/me`, {
+      fetch(`${import.meta.env.VITE_API_URL}/api/me`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       }).then(res => res.json()),
       
-      fetch(`${process.env.REACT_APP_API_URL}/api/myVlogs`, {
+      fetch(`${import.meta.env.VITE_API_URL}/api/myVlogs`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -41,7 +41,7 @@ function UserProfile() {
   const handleDeleteBlog = (blogId) => {
     if (window.confirm("Are you sure you want to delete this blog?")) {
       const token = localStorage.getItem("token");
-      fetch(`${process.env.REACT_APP_API_URL}/api/deleteVlog/${blogId}`, {
+      fetch(`${import.meta.env.VITE_API_URL}/api/deleteVlog/${blogId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

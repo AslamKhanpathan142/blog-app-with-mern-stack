@@ -15,7 +15,7 @@ function Searchbar() {
     setIsLoading(true);
     setHasSearched(true);
 
-    fetch(`${process.env.REACT_APP_API_URL}/api/search/${search}`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/search/${search}`)
       .then((res) => res.json())
       .then((data) => {
         setShowVlog(data);
