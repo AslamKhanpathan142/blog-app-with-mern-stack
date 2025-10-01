@@ -15,7 +15,6 @@ const TotalVlogs = () => {
     fetch(`${import.meta.env.VITE_API_URL}/api/users`)
       .then((res) => res.json())
       .then((data) => {
-        console.log("Fetched data:", data);
         setVlogs(data);
         setLoading(false);
       })
@@ -39,7 +38,6 @@ const TotalVlogs = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.message);
         alert("✅ " + data.message);
       })
       .catch(err => {

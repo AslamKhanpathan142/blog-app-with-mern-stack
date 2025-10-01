@@ -36,7 +36,6 @@ function Favorite() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("Deleted vlog:", data);
         // Refresh the favorites list after deletion
         fetchFavorites();
       })
